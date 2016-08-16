@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei';
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*导航*/
+.title {
+    height: 60px;
+    background: linear-gradient(to bottom, #fa8723, #f9821f, #f57614);
+    border-bottom: 1px solid #cc5a18;
+}
+
+.nav {
+    width: 1100px;
+    height: 60px;
+
+    margin: 0 auto;
+}
+
+.nav i {
+    width: 200px;
+    height: 60px;
+    float: left;
+    background: url("../img2/default.xiami.png") no-repeat;
+}
+
+.nav i:hover {
+    background: url("../img2/default.xiami.png") no-repeat 0 -60px;
+}
+
+.nav .music {
+    width: 180px;
+    height: 60px;
+    float: left;
+    margin-left: 58px;
+}
+
+.nav .music a.left, .nav .music a.right {
+    width: 90px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav ul.list {
+    /*margin-left: 14px;*/
+    /*background: yellow;*/
+    width: 250px;
+    height: 40px;
+    float: left;
+    margin: 15px;
+}
+
+.nav ul.list li {
+    width: 60px;
+    height: 28px;
+    float: left;
+    border: 1px solid #db6b16;
+    border-left: none;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.nav ul.list li.listO {
+    border-left: 1px solid #db6b16;
+}
+
+.nav ul.list li:hover {
+    background: #df6616;
+    cursor: pointer;
+}
+
+.nav span {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    float: right;
+    margin-top: 15px;
+    border-left: 1px solid #db6b16;
+    background: #cb681c;
+    border-radius: 5px;
+}
+
+.nav span a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav span:hover {
+    background: #c15e12;
+}
+
+/*中间*/
+.wrapper {
+    width: 980px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.wrapper img {
+    width: 580px;
+    height: 320px;
+
+    float: left;
+}
+
+.wrapper .wrapperR {
+    width: 340px;
+    /*height: 320px;*/
+    float: right;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+
+}
+
+.wrapper .wrapperR .top {
+    height: 40px;
+
+}
+
+.wrapper .wrapperR .xiaText {
+    /*display: none;*/
+}
+
+.wrapper .wrapperR .taobText {
+    display: none;
+}
+
+.wrapper .wrapperR .top li.listL, .wrapper .wrapperR .top li.listR {
+    width: 169px;
+    float: left;
+    font-weight: bold;
+    line-height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.wrapper .wrapperR .top li.listL {
+    border-right: 1px solid #e6e6e6;
+    background: #fafafa;
+
+}
+
+.wrapper .wrapperR .top li.listL a.bg {
+    color: #aaa;
+}
+
+.wrapper .wrapperR .top li.listR {
+    text-align: center;
+    border-bottom: none;
+
+}
+
+.wrapper .wrapperR .top a {
+    font-size: 16px;
+    color: #333;
+}
+
+.wrapper .wrapperR .top li i {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 15px 5px 0 40px;
+    background: url("../img2/sprite.icon.png") no-repeat;
+}
+
+.wrapper .xiaText .inputE {
+    float: left;
+    width: 242px;
+    height: 38px;
+    margin: 30px 0 0 46px;
+    padding-left: 8px;
+    font-size: 12px;
+    background: #e30000;
+    color: #fff;
+    border: none;
+    /*js*/
+    display: none;
+}
+
+.wrapper .xiaText p input {
+    float: left;
+    width: 183px;
+    height: 38px;
+    padding-left: 55px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+
+    outline-color: #ff6600;
+}
+
+.wrapper .xiaText .inputT {
+    float: left;
+    margin: 33px 0 0 46px;
+    position: relative;
+}
+
+.wrapper .xiaText .inputB {
+    margin: 15px 0 0 46px;
+    float: left;
+    position: relative;
+}
+
+.wrapper .xiaText span.letter, .wrapper .xiaText span.lock {
+    width: 50px;
+    height: 38px;
+    float: left;
+}
+
+.wrapper .xiaText span.letter {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: url("../img2/sprite.icon.png") no-repeat -462px 0;
+}
+
+.wrapper .xiaText span.lock {
+    background: url("../img2/sprite.icon.png") no-repeat -462px -36px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.wrapper .xiaText .inputC {
+    float: left;
+    width: 250px;
+    height: 38px;
+    margin-top: 15px;
+    margin-left: 46px;
+    background: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.wrapper .xiaText .inputC:hover {
+    background: #ea5900;
+    cursor: pointer;
+}
+
+.wrapper .xiaText i a {
+    float: left;
+    color: #3366cc;
+    font-style: normal;
+    margin: 12px 0 0 206px;
+    font-size: 12px;
+}
+
+.wrapper .xiaText .bottom {
+    float: left;
+    width: 340px;
+    height: 40px;
+    margin-top: 27px;
+    background: #fafafa;
+}
+
+.wrapper .xiaText .bottom .bottomL i {
+    float: left;
+    margin: 14px 5px 0 77px;
+
+    width: 21px;
+    height: 16px;
+    background: url("../img2/sprite.icon.png") no-repeat -32px 0;
+}
+
+.wrapper .xiaText .bottom .bottomL a, .wrapper .xiaText .bottom .bottomR a {
+    float: left;
+    margin-top: 14px;
+}
+
+.wrapper .xiaText .bottom .bottomM {
+    float: left;
+    margin: 15px 25px 0 25px;
+    height: 11px;
+    border: 1px solid #e9e6e9;
+
+}
+
+.wrapper .xiaText .bottom a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.wrapper .xiaText .bottom .bottomR i {
+    float: left;
+    margin-top: 14px;
+    width: 16px;
+    height: 16px;
+    background: url("../img2/sprite.icon.png") no-repeat -16px 0;
+}
+
+/*淘宝*/
+.wrapper .taobText {
+    float: left;
+
+}
+
+.wrapper .taobText .taoE {
+    float: left;
+    width: 204px;
+    height: 18px;
+    margin: 30px 0 0 43px;
+    padding: 4px 12px 4px 32px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #f6c8b5;
+    background: #fceee8;
+    position: relative;
+    /*js*/
+    display: none;
+}
+
+.wrapper .taobText .taoE p {
+    color: #4d4d4d;
+}
+
+.wrapper .taobText .taoE i {
+    /*float: left;*/
+    position: absolute;
+    left: 13px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    background: url("../img2/notice.png") no-repeat -30px -34px;
+
+}
+
+.wrapper .taobText .inputT {
+    color: #4d4d4d;
+    float: left;
+    margin: 40px 0 0 45px;
+    font-weight: bold;
+}
+
+.wrapper .taobText .inputB {
+    color: #4d4d4d;
+    float: left;
+    margin: 10px 0 0 45px;
+    font-weight: bold;
+}
+
+.wrapper .taobText .inputD, .wrapper .taobText .inputF {
+    width: 236px;
+    height: 17px;
+    float: left;
+    margin: 10px 0 0 45px;
+    padding: 2px 4px;
+}
+
+.wrapper .taobText .forget {
+    float: right;
+    font-style: normal;
+    margin: 10px 60px 0 0;
+    color: #0088cc;
+}
+
+.wrapper .taobText .forget a {
+    color: #0088cc;
+}
+
+.wrapper .taobText .inputC {
+    background: linear-gradient(to bottom, #ffaa04, #ff8d26);
+    width: 248px;
+    height: 29px;
+    border: 1px solid #e87b0e;
+    margin: 15px 0 0 45px;
+    color: #fff;
+    outline: none;
+}
+
+.wrapper .taobText .inputC:hover {
+    cursor: pointer;
+    background: #f8af23;
+}
+
+.wrapper .taobText .free {
+    float: right;
+    margin: 10px 60px 80px 0;
+    color: #0088cc;
+}
+
+.wrapper .taobText .bottom {
+    float: left;
+    width: 340px;
+    height: 40px;
+    margin-top: 27px;
+    background: #fafafa;
+}
+
+.wrapper .taobText .bottom .bottomL i {
+    float: left;
+    margin: 14px 5px 0 77px;
+
+    width: 21px;
+    height: 16px;
+    background: url("../img2/sprite.icon.png") no-repeat -32px 0;
+}
+
+.wrapper .taobText .bottom .bottomL a, .wrapper .taobText .bottom .bottomR a {
+    float: left;
+    margin-top: 14px;
+}
+
+.wrapper .taobText .bottom .bottomM {
+    float: left;
+    margin: 15px 25px 0 25px;
+    height: 11px;
+    border: 1px solid #e9e6e9;
+
+}
+
+.wrapper .taobText .bottom a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.wrapper .taobText .bottom .bottomR i {
+    float: left;
+    margin-top: 14px;
+    width: 16px;
+    height: 16px;
+    background: url("../img2/sprite.icon.png") no-repeat -16px 0;
+}
+
+/*分割线*/
+.split {
+    margin-top: 180px;
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+    display: block;
+}
+
+/*下标*/
+.subscript {
+    width: 1100px;
+    height: 159px;
+    margin: 25px auto;
+    /*float: left;*/
+}
+
+.first {
+    margin-left: 0;
+}
+
+dl {
+    float: left;
+    font-size: 12px;
+    margin-left: 36px;
+}
+
+dl dt {
+    font-weight: bold;
+    color: #666666;;
+    margin-bottom: 2px;
+}
+
+dl dd {
+    margin-top: 10px;
+    color: #999999;
+    position: relative;
+}
+
+dl dd i {
+    background: url("../img2/sup_hot.gif") no-repeat;
+    width: 19px;
+    height: 11px;
+    position: absolute;
+    left: 55px;
+    top: 0;
+
+}
+
+.second {
+    width: 1100px;
+    margin: 0 auto;
+    border: 1px dashed #cccccc;
+}
+
+.listLittle {
+    width: 1100px;
+    height: 68px;
+    margin: 10px auto;
+
+    color: #999999;
+    /*float: left;*/
+    font-size: 10px;
+}
+
+.listLittle li {
+    float: left;
+    margin-right: 6px;
+    margin-left: 3px;
+    line-height: 30px;
+
+}
+
+.listLittle i {
+    height: 15px;
+    float: left;
+    width: 1px;
+    background: #eeeeee;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+.listBottom {
+    width: 1100px;
+    height: 54px;
+    /*float: left;*/
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.listBottom p {
+    margin-top: 16px;
+    float: left;
+    color: #999999;
+}
+
+.listBottom .listBL {
+    float: left;
+    margin-top: 18px;
+}
+
+.listBottom .listBL li {
+    width: 16px;
+    height: 16px;
+    background: url("../img2/sync-ico_v15.gif") no-repeat 0 -16px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.listBottom .listBL li:hover {
+    background: url("../img2/sync-ico_v15.gif") no-repeat;
+}
+
+.listBottom i {
+    width: 500px;
+    height: 23px;
+    line-height: 23px;
+    float: right;
+    font-style: normal;
+    margin-top: 5px;
+    color: #aaaaaa;
+}
+
+.listBottom i span {
+    width: 117px;
+    height: 25px;
+    background: url("../img2/xiami_motto.png") no-repeat;
+    float: right;
+}
+
+.listBottom b {
+    float: right;
+    font-weight: normal;
+    height: 23px;
+    line-height: 23px;
+    color: #aaaaaa;
+}
